@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-image: url("https://contentstatic.techgig.com/thumb/msid-120252726,width-800,resizemode-4/What-is-Vibe-coding-and-how-is-it-revolutionising-software-industry.jpg?53090");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+nav {
+  background-color: #ffffff;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  top: 0;
+  position: sticky;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+nav ul li {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+nav ul li a:hover {
+  color: rgb(126, 209, 62);
+}
+nav ul li a.active {
+  color: darkblue;
+}
+nav li:first-child {
+  margin-right: auto;
+}
+.sidebare {
+  top: 0;
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  box-shadow: -10px 0 10px;
+  background-color: #333;
+  color: white;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter: blure(10px);
+}
+.sidebare li {
+  width: 100%;
+}
+.sidebare li a {
+  width: 100%;
+  padding: 15px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.menu-item {
+  display: none;
+}
+main {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* grid-template-columns: auto auto auto; */
+  gap: 20px;
+}
+section {
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  padding: 20px;
+  display: block;
+  /* flex-direction: row; */
+  align-items: center;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  width: 100%;
+}
+section h1 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: #ffffff;
+  /* align-items: center; */
+  text-align: center;
+}
+section li {
+  list-style: square;
+  line-height: 1.5rem;
+  padding-left: 2rem;
+}
+
+.profile {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  /* border: #6bd0bc 2px solid; */
+  border-radius: 8px;
+  width: 100%;
+}
+footer {
+  min-height: 20vh;
+  background-color: #ffffff;
+  color: #333333;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.copy-right {
+  font-size: 1rem;
+  color: #333333;
+  text-decoration: none;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 2rem;
+}
+.social-media a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  .hideOnmobile {
+    display: none;
+  }
+  .menu-item {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0 20px;
+    color: black;
+  }
+}
+@media (max-width: 400px) {
+  .sidebare {
+    width: 100%;
+  }
+}
