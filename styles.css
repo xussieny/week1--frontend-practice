@@ -153,6 +153,14 @@ footer {
     padding: 0 20px;
     color: black;
   }
+  main {
+    display: block;
+    width: 100%;
+  }
+  section h1 {
+    text-align: left;
+    color: aquamarine;
+  }
 }
 @media (max-width: 400px) {
   .sidebare {
